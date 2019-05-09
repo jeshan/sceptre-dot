@@ -1,0 +1,10 @@
+[[source]]
+verify_ssl = true
+name = "pypi"
+url = "https://pypi.org/simple"
+
+[dev-packages]
+
+[packages]
+sceptre = "*"
+"urllib3" = "*"
