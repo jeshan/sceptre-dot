@@ -6,12 +6,13 @@ env:
     TWINE_PASSWORD: /CodeBuild/pypi-password
     GITHUB_TOKEN: /CodeBuild/GITHUB_TOKEN
   variables:
-    CODE_VERSION: 0.1
+    CODE_VERSION: 0.2
 
 phases:
   build:
     commands:
       - pip install --upgrade setuptools wheel twine
       - mkdir -p tmp
+      - echo "__version__ = '${CODE_VERSION}'" >> sceptre_dot/__version__.py
       - cp -r LICENCE.txt setup.py README.md release.sh sceptre_dot tmp/
       - cd tmp && ./release.sh
