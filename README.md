@@ -23,7 +23,7 @@ In the same directory where you would normally invoke `sceptre launch -y $YOUR_P
 sceptre-dot $YOUR_PATH > output.dot
 fdp -Tpng output.dot -o output.png # use fdp engine for best results
 ```
-
+If you can't or don't want to install graphviz, you can paste the outputted dot file in an online viewer like [viz-js](http://viz-js.com/). (Be sure to choose the **fdp** engine) 
 
 
 Released under the Simplified BSD Licence.
