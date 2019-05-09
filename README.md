@@ -1,6 +1,6 @@
 Helps you visualise your Sceptre projects with Graphviz (DOT).
 
-![screenshot.png](https://github.com/jeshan/sceptre-dot/screenshot.png)
+![screenshot.png](screenshot.png)
 
 # Benefits
 - Visualisation can be added as a documentation artefact to your project
